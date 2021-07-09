@@ -4,11 +4,11 @@ This repository contains the PyTorch implementation of our network proposed in t
 
 
 ## Requirements
-python		3.6.13
-numpy	   	  1.19.5		
-pytorch	  	1.5.1
-torchvision	 0.6.1
-opencv-python	4.5.1
+- python		3.6.13
+- numpy	   	  1.19.5		
+- pytorch	  	1.5.1
+- torchvision	 0.6.1
+- opencv-python	4.5.1
 
 
 ## Usage

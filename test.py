@@ -30,6 +30,7 @@ parser.add_argument('--gpu', type=str, default='0', help='ID of GPUs to use, eg.
 parser.add_argument('--arch', '-a', metavar='ARCH', default='se_resnet101', help='model architecture')
 parser.add_argument('--num_class', type=int, default=365, help='model file to resume to train')
 parser.add_argument('--displayInterval', type=int, default=10, help='Interval to be displayed')
+parser.add_argument('--image_size', type=int, default=224, help='image size')
 args = parser.parse_args()
 print(args)
 
@@ -39,12 +40,13 @@ if args.gpu:
 else:
     gpus = [0] 
 
+image_size = args.image_size
 normalize = transforms.Normalize(mean=[0.4815, 0.4815, 0.4815],
                                  std=[0.2235, 0.2235, 0.2235])
 
 val_loader = torch.utils.data.DataLoader(
     datasets.ImageFolder(args.test_root, transforms.Compose([
-        transforms.Resize(224),
+        transforms.Resize(image_size),
         transforms.ToTensor(),
         normalize,
     ])),
@@ -149,5 +151,5 @@ print("{: ^20} {:.5f}".format("acc_value", acc_value))
 print("{: ^20} {:.5f}\t{: ^20} {:.5f}\t{: ^20} {:.5f}".format("f1_macro", f1_mac_value, "f1_micro", f1_mic_value, "f1_weighted", f1_wei_value))
 print("{: ^20} {:.5f}\t{: ^20} {:.5f}\t{: ^20} {:.5f}".format("recall_macro", recall_mac_value, "recall_micro", recall_mic_value, "recall_weighted", recall_wei_value))
 print("{: ^20} {:.5f}\t{: ^20} {:.5f}\t{: ^20} {:.5f}".format("precision_macro", precision_mac_value, "precision_micro", precision_mic_value, "precision_weighted", precision_wei_value))
-
+#print("{: ^20} {:.5f}".format("AUC_value", AUC))
 

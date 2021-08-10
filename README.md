@@ -14,12 +14,12 @@ This repository contains the PyTorch implementation of our network proposed in t
 ## Usage
 1. Clone the repository
 
-2. Download the dataset ChestXRay2017 from the [link](https://data.mendeley.com/datasets/rscbjbr9sj/2) to the  `data` directory
+2. Download the dataset ChestXRay2017 from the [link](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) to the  `data` directory
 
 3. you can  test the model directly by the following commands
 
    ```
-   ./test.sh
+   ./test_COVID-19.sh
    ```
 
    

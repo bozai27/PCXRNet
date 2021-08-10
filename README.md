@@ -14,7 +14,7 @@ This repository contains the PyTorch implementation of our network proposed in t
 ## Usage
 1. Clone the repository
 
-2. Download the dataset ChestXRay2017 from the [link](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) to the  `data` directory
+2. Download the dataset COVID19-v4 from the [link](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) to the  `data` directory
 
 3. you can  test the model directly by the following commands
 

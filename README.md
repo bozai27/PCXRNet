@@ -26,4 +26,4 @@ This repository contains the PyTorch implementation of our network proposed in t
 
 
 ## Citation
-Feng, Yibo (2021): PCXRNet: Condense attention block and Multiconvolution spatial attention block for Pneumonia Chest X-Ray detection. TechRxiv. Preprint. https://doi.org/10.36227/techrxiv.14904837.v3 
+Y. Feng, X. Yang, D. Qiu, H. Zhang, D. Wei and J. Liu, "PCXRNet: Pneumonia Diagnosis From Chest X-Ray Images Using Condense Attention Block and Multiconvolution Attention Block," in IEEE Journal of Biomedical and Health Informatics, vol. 26, no. 4, pp. 1484-1495, April 2022, doi: 10.1109/JBHI.2022.3148317.
